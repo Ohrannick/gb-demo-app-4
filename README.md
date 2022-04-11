@@ -1,5 +1,3 @@
-
-
 # GbDemoApp
 
 This project was generated using [Nx](https://nx.dev).
@@ -79,8 +77,6 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-
-
 ## ☁ Nx Cloud
 
 ### Distributed Computation Caching & Distributed Task Execution
@@ -92,3 +88,19 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+### Запуск сборки Docer контейнера
+
+docker build -t gb-demo-app-4 .
+
+### Запуск контейнера
+
+docker run -d -p 80:3001 gb-demo-app-4
+
+### Просмотр запущенных контейнеров
+
+docker ps
+
+### Просмотр запущенных logs
+
+docker logs a9d5f93025c2
